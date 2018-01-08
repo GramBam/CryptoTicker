@@ -3,3 +3,7 @@
   padding: 0;
   display: inline-flex;
 }
+
+@media screen and (max-width: 720px) {
+  .tickers {display: block}
+}
