@@ -17,9 +17,9 @@ class Cryptocurrency extends Component {
       <li className={"cryptocurrency " + id}>
         <p className="cryptocurrency-name">{name} ({symbol})</p>
         <h1>${ (+price_usd).toFixed(2) }</h1>
-        <p>{percent_change_1h}% 1 hr</p>
-        <p>{percent_change_24h}% 24 hrs</p>
-        <p>{percent_change_7d}% 7 days</p>
+        <p><strong>{percent_change_1h}%</strong> 1 hour</p>
+        <p><strong>{percent_change_24h}%</strong> 24 hours</p>
+        <p><strong>{percent_change_7d}%</strong> 7 days</p>
       </li>
     );
   }
