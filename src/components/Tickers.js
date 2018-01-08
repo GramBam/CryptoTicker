@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './Tickers.css';
+import Cryptocurrency from './Cryptocurrency';
+import axios from 'axios';
 
 class Tickers extends Component {
 
@@ -39,12 +41,9 @@ class Tickers extends Component {
     }
 
     render() {
-           var tickers = this.state.data.map((currency) =>
-               <li key={currency.id}>
-                   <h3>{currency.id}</h3>
-                   <h4>{currency.price} USD</h4>
-               </li>
-           );
+      var tickers = this.state.data.map((currency) =>
+             <Cryptocurrency data={currency} key={currency.id} />
+         );
            return (
                <div className="tickers-container">
                    <ul className="tickers">{tickers}</ul>

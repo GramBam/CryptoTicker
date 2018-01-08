@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import './cryptocurrency.css';
+import './Cryptocurrency.css';
 
-Class Cryptocurrency extends Component {
+class Cryptocurrency extends Component {
 
   render() {
     var {
       id,
       name,
       symbol,
-      price_usd
+      price_usd,
       percent_change_1h,
       percent_change_24h,
       percent_change_7d,
